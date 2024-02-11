@@ -11982,6 +11982,15 @@ html {
   min-height: 100%;
 }
 
+main {
+  margin-bottom: 250px;
+}
+
+p {
+  font-family: "Gluten", cursive, serif;
+  font-size: 18px;
+}
+
 footer.footer {
   padding: 15px;
   position: absolute;
@@ -11989,6 +11998,27 @@ footer.footer {
   width: 100%;
 }
 
-main {
-  margin-bottom: 250px;
+.hero-scene {
+  position: relative;
+}
+.hero-scene::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/images/Tigre-2.jpg);
+  background-size: cover;
+  filter: brightness(0.3);
+}
+.hero-scene * {
+  position: relative;
+}
+.hero-scene .hero-scene-content {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
