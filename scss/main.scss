@@ -7,7 +7,7 @@ html {
 }
 
 main {
-    margin-bottom: 250px;
+    margin-bottom: 300px;
 }
 
 p {
@@ -37,7 +37,7 @@ footer.footer {
     }
 
     * {
-        // Positionner les élémentnsdevant le ::before
+        // Positionner les élémentns devant le ::before
         position: relative;
     }
 
@@ -52,5 +52,42 @@ footer.footer {
 
 .text-justify {
     text-align: justify;
+}
+
+.habitats-text, .savane-text {
+    font-size: 30px;
+}
+
+.text-underlined {
+    text-decoration: underline;
+}
+
+.habitats-title, .habitats-content, .savane-content {
+    font-size: 24px;
+}
+
+.image-card{
+    position:relative;
+    &:hover{
+        .titre-image{
+            opacity: 1;
+        }
+        img{
+            filter: brightness(0.3);
+        }
+    }
+
+    img{
+        transition: all 0.3s;
+    }
+
+    .titre-image{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all 0.3s;
+    }
 }
 
