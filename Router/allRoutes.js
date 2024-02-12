@@ -5,6 +5,7 @@ export const allRoutes = [
     new Route ("/", "Accueil", "/pages/home.html"),
     new Route ("/habitats", "Les habitats", "/pages/habitats.html"),
     new Route ("/savane", "La savane", "/pages/savane.html"),
+    new Route ("/connexion", "Connexion ", "/pages/connexion.html"),
     
 ];
 
