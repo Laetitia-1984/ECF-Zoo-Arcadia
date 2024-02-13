@@ -38,8 +38,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" data-show="disconnected"><!-- Lien visible pour les personnes non connectees -->
                             <a class="nav-link" href="/connexion">Connexion</a>
+                        </li>
+                        <li class="nav-item" data-show="connected"> <!-- Lien visible pour les personnes connectees -->
+                            <button class="nav-link" id="btn-deconnexion">Déconnexion</button>
                         </li>
                     </ul>
                 </div>
@@ -49,7 +52,6 @@
     <main id="main-page">
         <!-- Le contenu de la page sera affichée ici-->
     </main>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <footer class="bg-dark text-white text-center footer">
         <div class="row">
             <div class="col-12 col-lg-6">
@@ -66,8 +68,9 @@
             </div>
         </div>
     </footer>
-
+    <script src="js/script.js"></script>
     <script type="module" src="Router/router.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
