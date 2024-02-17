@@ -84,8 +84,8 @@ function showAndHideElementsForRoles() {
                     element.classList.add("d-none");
                 }
                 break;
-            case 'veterinaire':
-                if (!userConnected || role != "veterinaire") {
+            case 'veto':
+                if (!userConnected || role != "veto") {
                     element.classList.add("d-none");
                 }
                 break;

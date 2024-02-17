@@ -21,4 +21,20 @@ function checkCredentials() {
         mailInput.classList.add("is-invalid");
         passwordInput.classList.add("is-invalid");
     }
+
+    if (mailInput.value == "marie@arcadia.com" && passwordInput.value == "Marie-1956") {
+
+        //Récupérer le token
+        const token  = "azazazazazazaz";
+        setToken(token);
+
+        setCookie(RoleCookieName, "employe", 7);
+        window.location.replace("/homeEmploye");
+    }
+    else {
+        mailInput.classList.add("is-invalid");
+        passwordInput.classList.add("is-invalid");
+    }
+
+
 }
